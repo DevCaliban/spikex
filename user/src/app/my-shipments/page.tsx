@@ -37,10 +37,10 @@ export default function MyShipmentsPage() {
 
         <main className="flex-1 bg-gray-50">
           {/* Hero banner */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-10">
+          <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-10">
             <div className="max-w-5xl mx-auto px-4">
               <h1 className="text-3xl font-bold mb-2">My Shipments</h1>
-              <p className="text-red-100">
+              <p className="text-blue-100">
                 View and track all parcels you&apos;ve sent.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function MyShipmentsPage() {
                 <p className="text-red-600 mb-4">{error}</p>
                 <button
                   onClick={() => window.location.reload()}
-                  className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
+                  className="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors text-sm"
                 >
                   Retry
                 </button>
@@ -95,7 +95,7 @@ export default function MyShipmentsPage() {
                 </p>
                 <Link
                   href="/send"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors text-sm"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm"
                 >
                   <svg
                     className="w-4 h-4"
@@ -124,7 +124,7 @@ export default function MyShipmentsPage() {
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                       <div>
                         <div className="flex items-center gap-3 mb-1">
-                          <span className="font-mono font-bold text-red-600">
+                          <span className="font-mono font-bold text-blue-700">
                             {shipment.tracking_code}
                           </span>
                           <span
@@ -151,7 +151,7 @@ export default function MyShipmentsPage() {
                             }
                           )}
                         </p>
-                        <span className="text-red-600 text-xs font-medium">
+                        <span className="text-blue-700 text-xs font-medium">
                           Track →
                         </span>
                       </div>
@@ -162,7 +162,7 @@ export default function MyShipmentsPage() {
                 <div className="text-center pt-4">
                   <Link
                     href="/send"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors text-sm"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm"
                   >
                     <svg
                       className="w-4 h-4"

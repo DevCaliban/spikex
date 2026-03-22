@@ -37,7 +37,7 @@ export default function LoginPage() {
   if (loading || isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600" />
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-700" />
       </div>
     );
   }
@@ -47,9 +47,9 @@ export default function LoginPage() {
       {/* Left Panel - Hidden on mobile, visible on lg+ */}
       <div className="hidden lg:flex lg:w-[45%] relative bg-gray-900 flex-col justify-between p-10 overflow-hidden">
         {/* Gradient accent blobs */}
-        <div className="absolute top-[-120px] left-[-80px] w-[400px] h-[400px] bg-red-600/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-[-100px] right-[-60px] w-[350px] h-[350px] bg-red-500/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/3 w-[250px] h-[250px] bg-red-700/10 rounded-full blur-2xl" />
+        <div className="absolute top-[-120px] left-[-80px] w-[400px] h-[400px] bg-blue-700/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-[-100px] right-[-60px] w-[350px] h-[350px] bg-blue-600/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-[250px] h-[250px] bg-blue-800/10 rounded-full blur-2xl" />
 
         {/* Top: Logo */}
         <div className="relative z-10">
@@ -71,9 +71,9 @@ export default function LoginPage() {
           <div className="mt-10 space-y-5">
             {/* Feature 1 */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/10 flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-red-500"
+                  className="w-5 h-5 text-blue-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
@@ -103,9 +103,9 @@ export default function LoginPage() {
 
             {/* Feature 2 */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/10 flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-red-500"
+                  className="w-5 h-5 text-blue-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
@@ -130,9 +130,9 @@ export default function LoginPage() {
 
             {/* Feature 3 */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/10 flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-red-500"
+                  className="w-5 h-5 text-blue-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
@@ -224,7 +224,7 @@ export default function LoginPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                    className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -239,7 +239,7 @@ export default function LoginPage() {
                   >
                     Password
                   </label>
-                  <span className="text-xs text-red-600 hover:text-red-500 cursor-pointer">
+                  <span className="text-xs text-blue-700 hover:text-blue-600 cursor-pointer">
                     Forgot password?
                   </span>
                 </div>
@@ -265,7 +265,7 @@ export default function LoginPage() {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                    className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                     placeholder="Enter your password"
                   />
                 </div>
@@ -275,7 +275,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full py-3 px-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                className="w-full py-3 px-4 bg-blue-700 text-white font-semibold rounded-xl hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
               >
                 {submitting ? (
                   <span className="flex items-center justify-center gap-2">
@@ -312,7 +312,7 @@ export default function LoginPage() {
             Don&apos;t have an account?{" "}
             <Link
               href="/register"
-              className="font-semibold text-red-600 hover:text-red-500"
+              className="font-semibold text-blue-700 hover:text-blue-600"
             >
               Create one
             </Link>

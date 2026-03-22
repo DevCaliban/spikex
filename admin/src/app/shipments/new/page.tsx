@@ -64,14 +64,14 @@ export default function NewShipmentPage() {
             </p>
             <div className="inline-flex items-center px-6 py-3 bg-gray-50 rounded-xl mb-6">
               <span className="text-sm text-gray-500 mr-2">Tracking Code:</span>
-              <span className="text-xl font-bold font-mono text-red-600">
+              <span className="text-xl font-bold font-mono text-blue-700">
                 {success.tracking_code}
               </span>
             </div>
             <div className="flex justify-center gap-3">
               <Link
                 href={`/shipments/${success.id}`}
-                className="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 transition-colors"
+                className="px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 transition-colors"
               >
                 View Shipment
               </Link>

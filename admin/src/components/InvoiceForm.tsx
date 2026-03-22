@@ -106,8 +106,8 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
       {/* Section 1: Select Shipment */}
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-8 h-8 rounded-lg bg-red-100 flex items-center justify-center">
-            <svg className="w-4 h-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+            <svg className="w-4 h-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
           </div>
@@ -118,7 +118,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
           <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
             <div className="flex items-start justify-between">
               <div className="space-y-2">
-                <p className="font-mono font-bold text-red-600">{selectedShipment.tracking_code}</p>
+                <p className="font-mono font-bold text-blue-700">{selectedShipment.tracking_code}</p>
                 <div className="grid grid-cols-2 gap-x-8 gap-y-1 text-sm">
                   <div>
                     <span className="text-gray-400">Sender: </span>
@@ -144,7 +144,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
                   setSelectedShipment(null);
                   setShipmentSearch("");
                 }}
-                className="text-sm text-red-600 hover:text-red-700 font-medium"
+                className="text-sm text-blue-700 hover:text-blue-800 font-medium"
               >
                 Change
               </button>
@@ -165,11 +165,11 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
                 }}
                 onFocus={() => setShowDropdown(true)}
                 placeholder="Search or select a shipment..."
-                className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+                className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               />
               {searchLoading && (
                 <div className="absolute right-3 top-1/2 -translate-y-1/2">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-red-600" />
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-700" />
                 </div>
               )}
             </div>
@@ -192,7 +192,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
                       className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="font-mono font-medium text-red-600 text-sm">
+                        <span className="font-mono font-medium text-blue-700 text-sm">
                           {s.tracking_code}
                         </span>
                         <span className={`text-xs px-2 py-0.5 rounded-full ${
@@ -240,7 +240,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               min="0"
               required
               placeholder="0.00"
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
             />
           </div>
           <div>
@@ -255,7 +255,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               step="0.01"
               min="0"
               max="100"
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
             />
           </div>
           <div>
@@ -270,7 +270,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               step="0.01"
               min="0"
               placeholder="0.00"
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
             />
           </div>
         </div>
@@ -322,7 +322,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               value={formData.issued_date}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
             />
           </div>
           <div>
@@ -335,7 +335,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               value={formData.due_date}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
             />
           </div>
           <div>
@@ -346,7 +346,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
               name="payment_status"
               value={formData.payment_status}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm bg-white"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm bg-white"
             >
               {PAYMENT_STATUS_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -367,7 +367,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
             onChange={handleChange}
             rows={3}
             placeholder="Any additional notes for this invoice..."
-            className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+            className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
           />
         </div>
       </div>
@@ -377,7 +377,7 @@ export default function InvoiceForm({ onSubmit, loading }: InvoiceFormProps) {
         <button
           type="submit"
           disabled={loading || !selectedShipment || !formData.shipping_fee}
-          className="px-6 py-2.5 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors inline-flex items-center gap-2"
+          className="px-6 py-2.5 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors inline-flex items-center gap-2"
         >
           {loading ? (
             <>

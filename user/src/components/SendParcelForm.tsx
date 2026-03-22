@@ -51,7 +51,7 @@ export default function SendParcelForm({
   };
 
   const inputClass =
-    "w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent";
+    "w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
@@ -59,7 +59,7 @@ export default function SendParcelForm({
       <div>
         <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
           <svg
-            className="w-5 h-5 text-red-600"
+            className="w-5 h-5 text-blue-700"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -133,7 +133,7 @@ export default function SendParcelForm({
       <div>
         <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
           <svg
-            className="w-5 h-5 text-red-600"
+            className="w-5 h-5 text-blue-700"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -207,7 +207,7 @@ export default function SendParcelForm({
       <div>
         <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
           <svg
-            className="w-5 h-5 text-red-600"
+            className="w-5 h-5 text-blue-700"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -301,7 +301,7 @@ export default function SendParcelForm({
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-3 px-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full py-3 px-4 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? (
           <span className="flex items-center justify-center gap-2">

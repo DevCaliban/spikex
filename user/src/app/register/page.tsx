@@ -63,7 +63,7 @@ export default function RegisterPage() {
   if (loading || isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600" />
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-700" />
       </div>
     );
   }
@@ -73,9 +73,9 @@ export default function RegisterPage() {
       {/* Left Panel - Hidden on mobile, visible on lg+ */}
       <div className="hidden lg:flex lg:w-[45%] relative bg-gray-900 text-white flex-col justify-between p-10 overflow-hidden">
         {/* Subtle red accent blobs */}
-        <div className="absolute top-[-120px] left-[-80px] w-[300px] h-[300px] bg-red-600/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-[-100px] right-[-60px] w-[250px] h-[250px] bg-red-500/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/3 w-[200px] h-[200px] bg-red-700/10 rounded-full blur-2xl" />
+        <div className="absolute top-[-120px] left-[-80px] w-[300px] h-[300px] bg-blue-700/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-[-100px] right-[-60px] w-[250px] h-[250px] bg-blue-600/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-[200px] h-[200px] bg-blue-800/10 rounded-full blur-2xl" />
 
         {/* Top - Logo */}
         <div className="relative z-10">
@@ -96,8 +96,8 @@ export default function RegisterPage() {
           <div className="mt-10 space-y-5">
             {/* Benefit 1 */}
             <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/20 flex items-center justify-center">
-                <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/20 flex items-center justify-center">
+                <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -106,8 +106,8 @@ export default function RegisterPage() {
 
             {/* Benefit 2 */}
             <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/20 flex items-center justify-center">
-                <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/20 flex items-center justify-center">
+                <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -116,8 +116,8 @@ export default function RegisterPage() {
 
             {/* Benefit 3 */}
             <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-red-600/20 flex items-center justify-center">
-                <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-700/20 flex items-center justify-center">
+                <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
@@ -130,7 +130,7 @@ export default function RegisterPage() {
         <div className="relative z-10">
           <p className="text-sm text-gray-500">
             Already have an account?{" "}
-            <Link href="/login" className="text-white font-medium hover:text-red-400 transition-colors">
+            <Link href="/login" className="text-white font-medium hover:text-blue-400 transition-colors">
               Sign in
             </Link>
           </p>
@@ -185,7 +185,7 @@ export default function RegisterPage() {
                     required
                     value={form.first_name}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                    className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                     placeholder="John"
                   />
                 </div>
@@ -207,7 +207,7 @@ export default function RegisterPage() {
                     required
                     value={form.last_name}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                    className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                     placeholder="Doe"
                   />
                 </div>
@@ -232,7 +232,7 @@ export default function RegisterPage() {
                   required
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                   placeholder="you@example.com"
                 />
               </div>
@@ -257,7 +257,7 @@ export default function RegisterPage() {
                   minLength={8}
                   value={form.password}
                   onChange={handleChange}
-                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                   placeholder="Minimum 8 characters"
                 />
               </div>
@@ -282,7 +282,7 @@ export default function RegisterPage() {
                   minLength={8}
                   value={form.password_confirm}
                   onChange={handleChange}
-                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow"
+                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-shadow"
                   placeholder="Re-enter your password"
                 />
               </div>
@@ -292,7 +292,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full py-3 px-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+              className="w-full py-3 px-4 bg-blue-700 text-white font-semibold rounded-xl hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
             >
               {submitting ? (
                 <span className="flex items-center justify-center gap-2">
@@ -326,7 +326,7 @@ export default function RegisterPage() {
           {/* Sign in link */}
           <p className="mt-6 text-center text-sm text-gray-500">
             Already have an account?{" "}
-            <Link href="/login" className="font-medium text-red-600 hover:text-red-500 transition-colors">
+            <Link href="/login" className="font-medium text-blue-700 hover:text-blue-600 transition-colors">
               Sign in
             </Link>
           </p>

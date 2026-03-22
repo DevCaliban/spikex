@@ -64,7 +64,7 @@ export default function SendParcelPage() {
 
                 <div className="bg-gray-50 rounded-xl p-4 mb-6">
                   <p className="text-sm text-gray-500 mb-1">Tracking Code</p>
-                  <p className="text-2xl font-bold text-red-600 font-mono tracking-wider">
+                  <p className="text-2xl font-bold text-blue-700 font-mono tracking-wider">
                     {trackingCode}
                   </p>
                 </div>
@@ -72,7 +72,7 @@ export default function SendParcelPage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     href={`/track/${trackingCode}`}
-                    className="flex-1 py-2.5 px-4 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors text-sm text-center"
+                    className="flex-1 py-2.5 px-4 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm text-center"
                   >
                     Track Shipment
                   </Link>
@@ -98,12 +98,12 @@ export default function SendParcelPage() {
         ) : (
           <main className="flex-1 bg-gray-50">
             {/* Hero banner */}
-            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
+            <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-12">
               <div className="max-w-3xl mx-auto px-4 text-center">
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">
                   Send a Parcel
                 </h1>
-                <p className="text-red-100 text-lg">
+                <p className="text-blue-100 text-lg">
                   Fill in the details below to register your shipment. You&apos;ll
                   receive a tracking code to monitor its progress.
                 </p>

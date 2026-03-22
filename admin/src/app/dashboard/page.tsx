@@ -100,7 +100,7 @@ export default function DashboardPage() {
             </Link>
             <Link
               href="/shipments/new"
-              className="inline-flex items-center px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 transition-colors gap-1.5"
+              className="inline-flex items-center px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 transition-colors gap-1.5"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -191,7 +191,7 @@ export default function DashboardPage() {
                   </h3>
                   <Link
                     href="/analytics"
-                    className="text-xs text-red-600 hover:text-red-700 font-medium"
+                    className="text-xs text-blue-700 hover:text-blue-800 font-medium"
                   >
                     View All
                   </Link>
@@ -250,7 +250,7 @@ export default function DashboardPage() {
                   </h3>
                   <Link
                     href="/shipments"
-                    className="text-xs text-red-600 hover:text-red-700 font-medium"
+                    className="text-xs text-blue-700 hover:text-blue-800 font-medium"
                   >
                     View All
                   </Link>

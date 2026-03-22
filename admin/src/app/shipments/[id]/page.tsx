@@ -76,7 +76,7 @@ function RouteVisualization({ origin, destination, status }: { origin: string; d
       <div className="flex-1 relative min-w-24">
         <div className="h-1.5 bg-gray-100 rounded-full">
           <div
-            className="h-full bg-red-500 rounded-full transition-all duration-700"
+            className="h-full bg-blue-600 rounded-full transition-all duration-700"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -85,7 +85,7 @@ function RouteVisualization({ origin, destination, status }: { origin: string; d
             className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2"
             style={{ left: `${progress}%` }}
           >
-            <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
               <path d="M3.27 9H2a1 1 0 000 2h.8l.27.82a2 2 0 001.9 1.37h.04A2 2 0 007 11.82V10H5l-.29-.84A2 2 0 002.82 8h-.55zM20 8h-3v3h.99a2 2 0 001.9-1.37L20 9h.73a1 1 0 000-2H20zM17 13a3 3 0 100 6 3 3 0 000-6zm0 4a1 1 0 110-2 1 1 0 010 2zM7 13a3 3 0 100 6 3 3 0 000-6zm0 4a1 1 0 110-2 1 1 0 010 2z" />
             </svg>
           </div>
@@ -158,7 +158,7 @@ export default function ShipmentDetailPage() {
 
         {loading && (
           <div className="flex justify-center py-20">
-            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-red-600" />
+            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-700" />
           </div>
         )}
 
@@ -207,7 +207,7 @@ export default function ShipmentDetailPage() {
                   />
                   <button
                     onClick={() => setShowStatusModal(true)}
-                    className="inline-flex items-center px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 transition-colors gap-1.5"
+                    className="inline-flex items-center px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 transition-colors gap-1.5"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -233,7 +233,7 @@ export default function ShipmentDetailPage() {
                 onClick={() => setActiveTab("overview")}
                 className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                   activeTab === "overview"
-                    ? "bg-red-600 text-white"
+                    ? "bg-blue-700 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -243,7 +243,7 @@ export default function ShipmentDetailPage() {
                 onClick={() => setActiveTab("timeline")}
                 className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                   activeTab === "timeline"
-                    ? "bg-red-600 text-white"
+                    ? "bg-blue-700 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -258,8 +258,8 @@ export default function ShipmentDetailPage() {
                   {/* Sender */}
                   <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <div className="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                         </svg>
                       </div>

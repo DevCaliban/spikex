@@ -31,7 +31,7 @@ export default function TrackingForm({ large = false }: { large?: boolean }) {
         <div
           className={`flex flex-col sm:flex-row gap-3 p-2 rounded-2xl transition-all duration-300 ${
             isFocused
-              ? "bg-white/15 backdrop-blur-md shadow-lg shadow-red-900/20 ring-1 ring-white/20"
+              ? "bg-white/15 backdrop-blur-md shadow-lg shadow-blue-950/20 ring-1 ring-white/20"
               : "bg-white/10 backdrop-blur-sm"
           }`}
         >
@@ -39,7 +39,7 @@ export default function TrackingForm({ large = false }: { large?: boolean }) {
             <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">
               <svg
                 className={`w-5 h-5 transition-colors duration-200 ${
-                  isFocused ? "text-red-400" : "text-gray-400"
+                  isFocused ? "text-blue-400" : "text-gray-400"
                 }`}
                 fill="none"
                 viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ export default function TrackingForm({ large = false }: { large?: boolean }) {
           </div>
           <button
             type="submit"
-            className="group px-8 py-4 bg-red-600 text-white text-base sm:text-lg font-semibold rounded-xl hover:bg-red-700 active:scale-[0.97] transition-all duration-200 shrink-0 flex items-center justify-center gap-2"
+            className="group px-8 py-4 bg-blue-700 text-white text-base sm:text-lg font-semibold rounded-xl hover:bg-blue-800 active:scale-[0.97] transition-all duration-200 shrink-0 flex items-center justify-center gap-2"
           >
             Track
             <svg
@@ -80,7 +80,7 @@ export default function TrackingForm({ large = false }: { large?: boolean }) {
           </button>
         </div>
         {!isValidFormat && (
-          <p className="text-red-300/80 text-xs mt-2 ml-2 animate-fade-in">
+          <p className="text-blue-300/80 text-xs mt-2 ml-2 animate-fade-in">
             Tracking codes are at least 3 characters long
           </p>
         )}
@@ -95,14 +95,14 @@ export default function TrackingForm({ large = false }: { large?: boolean }) {
         value={trackingCode}
         onChange={(e) => setTrackingCode(e.target.value.toUpperCase())}
         placeholder="Enter tracking code"
-        className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all text-sm"
+        className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all text-sm"
         required
         autoComplete="off"
         spellCheck={false}
       />
       <button
         type="submit"
-        className="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 active:scale-95 transition-all"
+        className="px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 active:scale-95 transition-all"
       >
         Track
       </button>

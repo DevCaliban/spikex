@@ -115,8 +115,8 @@ export default function StatusTimeline({ updates }: { updates: StatusUpdate[] })
                           {update.status_display}
                         </p>
                         {isFirst && (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-700">
-                            <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-700">
+                            <span className="w-1.5 h-1.5 bg-blue-600 rounded-full animate-pulse" />
                             Latest
                           </span>
                         )}

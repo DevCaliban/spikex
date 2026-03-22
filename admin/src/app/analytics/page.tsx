@@ -64,7 +64,7 @@ export default function AnalyticsPage() {
                 onClick={() => setDays(opt.value)}
                 className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                   days === opt.value
-                    ? "bg-red-600 text-white"
+                    ? "bg-blue-700 text-white"
                     : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -180,7 +180,7 @@ export default function AnalyticsPage() {
                           </div>
                           <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-red-500 rounded-full transition-all duration-500"
+                              className="h-full bg-blue-600 rounded-full transition-all duration-500"
                               style={{ width: `${widthPercent}%` }}
                             />
                           </div>

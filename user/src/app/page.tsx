@@ -29,20 +29,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/85 to-gray-900/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 via-transparent to-transparent" />
         {/* Accent glows */}
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-red-600 rounded-full filter blur-[180px] opacity-15" />
-        <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-red-600 rounded-full filter blur-[140px] opacity-10" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-blue-700 rounded-full filter blur-[180px] opacity-15" />
+        <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-blue-700 rounded-full filter blur-[140px] opacity-10" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: text content */}
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-red-300 text-sm font-medium mb-6 border border-white/10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-blue-300 text-sm font-medium mb-6 border border-white/10">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 Trusted by 50,000+ customers worldwide
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.1]">
                 Global Logistics{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
                   &amp; Shipping
                 </span>{" "}
                 Solutions
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
                   href="#track"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/25 hover:shadow-red-600/40 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white font-semibold rounded-xl hover:bg-blue-800 transition-all duration-300 shadow-lg shadow-blue-700/25 hover:shadow-blue-700/40 hover:-translate-y-0.5"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -98,8 +98,8 @@ export default function Home() {
               </div>
               <div className="absolute bottom-4 right-16 animate-scale-in" style={{ animationDelay: "0.6s" }}>
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl hover:-translate-y-1 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <div className="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                   </div>
@@ -144,7 +144,7 @@ export default function Home() {
       {/* ─── TRACKING SECTION ─── */}
       <section id="track" className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-red-600 via-red-600 to-red-700 rounded-3xl p-8 sm:p-14 text-center text-white relative overflow-hidden shadow-2xl shadow-red-600/20">
+          <div className="bg-gradient-to-br from-blue-700 via-blue-700 to-blue-800 rounded-3xl p-8 sm:p-14 text-center text-white relative overflow-hidden shadow-2xl shadow-blue-700/20">
             {/* Decorative shapes */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -157,7 +157,7 @@ export default function Home() {
                 Real-Time Package Tracking
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Track Your Package</h2>
-              <p className="text-red-100 mb-10 max-w-lg mx-auto text-lg">
+              <p className="text-blue-100 mb-10 max-w-lg mx-auto text-lg">
                 Enter your SpikeX tracking code to get instant updates on your shipment&apos;s location and estimated delivery time.
               </p>
               <div className="max-w-xl mx-auto">
@@ -172,7 +172,7 @@ export default function Home() {
       <section id="services" className="py-20 sm:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-3">What We Offer</p>
+            <p className="text-blue-700 font-semibold text-sm uppercase tracking-widest mb-3">What We Offer</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               Our Logistics Services
             </h2>
@@ -194,8 +194,8 @@ export default function Home() {
                 title: "Ground Shipping",
                 desc: "Reliable road freight and last-mile delivery with comprehensive national coverage, flexible scheduling, and real-time route optimization.",
                 icon: "M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0",
-                color: "bg-red-50 text-red-600",
-                iconBg: "bg-red-100",
+                color: "bg-blue-50 text-blue-700",
+                iconBg: "bg-blue-100",
               },
               {
                 title: "Sea Freight",
@@ -228,7 +228,7 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 hover:shadow-xl transition-all duration-300 group"
+                className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-200 hover:shadow-xl transition-all duration-300 group"
               >
                 <div className={`w-14 h-14 ${service.iconBg} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
                   <svg className={`w-7 h-7 ${service.color.split(" ")[1]}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -237,7 +237,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">{service.desc}</p>
-                <Link href="#" className="inline-flex items-center gap-1 text-red-600 text-sm font-semibold hover:text-red-700 transition-colors group-hover:gap-2">
+                <Link href="#" className="inline-flex items-center gap-1 text-blue-700 text-sm font-semibold hover:text-blue-800 transition-colors group-hover:gap-2">
                   Learn more
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -261,7 +261,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gray-900/90" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-red-400 font-semibold text-sm uppercase tracking-widest mb-3">Simple Process</p>
+            <p className="text-blue-400 font-semibold text-sm uppercase tracking-widest mb-3">Simple Process</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">How It Works</h2>
             <p className="mt-5 text-gray-300 max-w-xl mx-auto text-lg">
               Getting your parcel from point A to point B has never been easier. Four simple steps to delivery.
@@ -299,11 +299,11 @@ export default function Home() {
               },
             ].map((item) => (
               <div key={item.step} className="relative text-center group">
-                <div className="w-28 h-28 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex flex-col items-center justify-center mx-auto mb-6 relative z-10 group-hover:border-red-400/50 group-hover:from-red-600/20 group-hover:to-red-600/10 transition-all duration-300">
-                  <svg className="w-8 h-8 text-red-400 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <div className="w-28 h-28 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex flex-col items-center justify-center mx-auto mb-6 relative z-10 group-hover:border-blue-400/50 group-hover:from-blue-700/20 group-hover:to-blue-700/10 transition-all duration-300">
+                  <svg className="w-8 h-8 text-blue-400 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
                   </svg>
-                  <span className="text-[11px] font-bold text-red-400/80 tracking-wider">STEP {item.step}</span>
+                  <span className="text-[11px] font-bold text-blue-400/80 tracking-wider">STEP {item.step}</span>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-400 leading-relaxed max-w-[240px] mx-auto">{item.desc}</p>
@@ -318,7 +318,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-3">Why SpikeXlogistics</p>
+              <p className="text-blue-700 font-semibold text-sm uppercase tracking-widest mb-3">Why SpikeXlogistics</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Safety, Speed &amp; Reliability at Competitive Prices
               </h2>
@@ -337,7 +337,7 @@ export default function Home() {
                   "Cost optimization for bulk shipments",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-4">
-                    <div className="w-7 h-7 bg-red-600 rounded-full flex items-center justify-center shrink-0 shadow-sm shadow-red-600/30">
+                    <div className="w-7 h-7 bg-blue-700 rounded-full flex items-center justify-center shrink-0 shadow-sm shadow-blue-700/30">
                       <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
@@ -349,7 +349,7 @@ export default function Home() {
               <div className="mt-10">
                 <Link
                   href="/send"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/25 hover:shadow-red-600/40 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white font-semibold rounded-xl hover:bg-blue-800 transition-all duration-300 shadow-lg shadow-blue-700/25 hover:shadow-blue-700/40 hover:-translate-y-0.5"
                 >
                   Get Started
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -362,7 +362,7 @@ export default function Home() {
             {/* Right side: illustration */}
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl" />
                 <div className="relative bg-white rounded-3xl p-10 border border-gray-200 shadow-xl">
                   <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
                     {/* Background grid */}
@@ -374,23 +374,23 @@ export default function Home() {
                     <ellipse cx="200" cy="150" rx="110" ry="45" stroke="#E5E7EB" strokeWidth="1" />
                     <ellipse cx="200" cy="150" rx="45" ry="110" stroke="#E5E7EB" strokeWidth="1" />
                     {/* Route lines */}
-                    <path d="M100 120 Q 150 80, 200 100 T 310 130" stroke="#DC2626" strokeWidth="2" fill="none" strokeDasharray="6 4" opacity="0.6" />
-                    <path d="M120 180 Q 180 220, 250 170 T 340 160" stroke="#DC2626" strokeWidth="2" fill="none" strokeDasharray="6 4" opacity="0.4" />
+                    <path d="M100 120 Q 150 80, 200 100 T 310 130" stroke="#1D4ED8" strokeWidth="2" fill="none" strokeDasharray="6 4" opacity="0.6" />
+                    <path d="M120 180 Q 180 220, 250 170 T 340 160" stroke="#1D4ED8" strokeWidth="2" fill="none" strokeDasharray="6 4" opacity="0.4" />
                     {/* Location nodes */}
-                    <circle cx="100" cy="120" r="8" fill="#DC2626" opacity="0.9">
+                    <circle cx="100" cy="120" r="8" fill="#1D4ED8" opacity="0.9">
                       <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite" />
                     </circle>
-                    <circle cx="200" cy="100" r="6" fill="#EF4444" />
-                    <circle cx="310" cy="130" r="8" fill="#DC2626" opacity="0.9">
+                    <circle cx="200" cy="100" r="6" fill="#2563EB" />
+                    <circle cx="310" cy="130" r="8" fill="#1D4ED8" opacity="0.9">
                       <animate attributeName="r" values="8;10;8" dur="2.5s" repeatCount="indefinite" />
                     </circle>
-                    <circle cx="120" cy="180" r="5" fill="#F87171" />
-                    <circle cx="250" cy="170" r="6" fill="#EF4444" />
-                    <circle cx="340" cy="160" r="5" fill="#F87171" />
+                    <circle cx="120" cy="180" r="5" fill="#60A5FA" />
+                    <circle cx="250" cy="170" r="6" fill="#2563EB" />
+                    <circle cx="340" cy="160" r="5" fill="#60A5FA" />
                     <circle cx="170" cy="130" r="4" fill="#FCA5A5" />
                     <circle cx="280" cy="110" r="4" fill="#FCA5A5" />
                     {/* Package icon center */}
-                    <rect x="175" y="125" width="50" height="50" rx="8" fill="#DC2626" />
+                    <rect x="175" y="125" width="50" height="50" rx="8" fill="#1D4ED8" />
                     <path d="M185 150 L200 140 L215 150 L200 160 Z" fill="white" opacity="0.9" />
                     <line x1="200" y1="140" x2="200" y2="160" stroke="white" strokeWidth="1" opacity="0.5" />
                     {/* Label */}
@@ -407,7 +407,7 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-3">Testimonials</p>
+            <p className="text-blue-700 font-semibold text-sm uppercase tracking-widest mb-3">Testimonials</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               What Our Clients Say
             </h2>
@@ -446,7 +446,7 @@ export default function Home() {
               >
                 {/* Quote icon */}
                 <div className="absolute top-6 right-6">
-                  <svg className="w-10 h-10 text-red-100" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-10 h-10 text-blue-100" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z" />
                   </svg>
                 </div>
@@ -460,7 +460,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6 text-[15px]">&ldquo;{testimonial.quote}&rdquo;</p>
                 <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                  <div className="w-11 h-11 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <div className="w-11 h-11 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     {testimonial.name.split(" ").map((n) => n[0]).join("")}
                   </div>
                   <div>
@@ -490,10 +490,10 @@ export default function Home() {
           />
         </video>
         <div className="absolute inset-0 bg-gray-900/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-red-900/30 to-gray-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/30 to-gray-900/50" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-red-300 text-sm font-medium mb-6 border border-white/10">
-            <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-blue-300 text-sm font-medium mb-6 border border-white/10">
+            <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
             Start Shipping Today
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
@@ -505,7 +505,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/send"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/25 hover:shadow-red-600/40 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white font-semibold rounded-xl hover:bg-blue-800 transition-all duration-300 shadow-lg shadow-blue-700/25 hover:shadow-blue-700/40 hover:-translate-y-0.5"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />

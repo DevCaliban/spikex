@@ -42,7 +42,7 @@ function SortHeader({
     >
       <span className="inline-flex items-center gap-1">
         {label}
-        <svg className={`w-3 h-3 transition-colors ${isActive ? "text-red-500" : "text-gray-300"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className={`w-3 h-3 transition-colors ${isActive ? "text-blue-600" : "text-gray-300"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           {currentDir === "asc" && isActive ? (
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
           ) : (
@@ -142,7 +142,7 @@ export default function InvoiceTable({
                 <td className="px-4 py-3 text-right">
                   <Link
                     href={`/invoices/${inv.id}`}
-                    className="text-red-600 hover:text-red-700 font-medium text-xs"
+                    className="text-blue-700 hover:text-blue-800 font-medium text-xs"
                   >
                     View
                   </Link>

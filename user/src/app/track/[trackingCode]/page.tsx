@@ -57,11 +57,11 @@ export default function TrackingPage() {
       >
         <div className="absolute inset-0 bg-linear-to-b from-gray-900/90 to-gray-900/80" />
         {/* Subtle animated accent */}
-        <div className="absolute -top-32 -right-32 w-80 h-80 bg-red-600 rounded-full filter blur-[120px] opacity-15 animate-pulse-dot" />
+        <div className="absolute -top-32 -right-32 w-80 h-80 bg-blue-700 rounded-full filter blur-[120px] opacity-15 animate-pulse-dot" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 sm:pt-14 sm:pb-20 text-center">
           <div className="animate-fade-in-down">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur text-red-300 text-sm font-medium mb-4 border border-white/10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur text-blue-300 text-sm font-medium mb-4 border border-white/10">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -69,7 +69,7 @@ export default function TrackingPage() {
             </div>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3 animate-fade-in-up delay-100">
-            Track Your <span className="text-red-400">Shipment</span>
+            Track Your <span className="text-blue-400">Shipment</span>
           </h1>
           <p className="text-gray-300 max-w-md mx-auto mb-8 animate-fade-in-up delay-200">
             Enter your tracking code for real-time delivery updates
@@ -90,9 +90,9 @@ export default function TrackingPage() {
           {/* ─── Error state ─── */}
           {error && !loading && (
             <div className="animate-scale-in">
-              <div className="bg-white rounded-2xl shadow-sm border border-red-100 p-10 text-center">
-                <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-5">
-                  <svg className="w-10 h-10 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <div className="bg-white rounded-2xl shadow-sm border border-blue-100 p-10 text-center">
+                <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                  <svg className="w-10 h-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                   </svg>
                 </div>
@@ -104,7 +104,7 @@ export default function TrackingPage() {
                 <div className="flex items-center justify-center gap-3">
                   <button
                     onClick={fetchTracking}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 active:scale-95 transition-all"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-700 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 active:scale-95 transition-all"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
@@ -166,8 +166,8 @@ export default function TrackingPage() {
                     className={`animate-fade-in-up ${card.delay} bg-white p-5 rounded-2xl border border-gray-100 shadow-sm card-hover`}
                   >
                     <div className="flex items-center gap-2.5 mb-3">
-                      <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center shrink-0">
-                        <svg className="w-4 h-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
+                        <svg className="w-4 h-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d={card.icon} />
                         </svg>
                       </div>
@@ -221,8 +221,8 @@ export default function TrackingPage() {
                   <div className="absolute inset-0 bg-gray-900/85" />
                   <div className="relative px-6 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-red-600/20 rounded-xl flex items-center justify-center shrink-0 animate-bounce-subtle">
-                        <svg className="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <div className="w-12 h-12 bg-blue-700/20 rounded-xl flex items-center justify-center shrink-0 animate-bounce-subtle">
+                        <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                         </svg>
                       </div>
@@ -233,7 +233,7 @@ export default function TrackingPage() {
                     </div>
                     <a
                       href="mailto:support@spikexlogistics.com"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 active:scale-95 transition-all shrink-0"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-700 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 active:scale-95 transition-all shrink-0"
                     >
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -383,9 +383,9 @@ function AnimatedProgressBar({ currentStatus }: { currentStatus: string }) {
               <div
                 className={`relative w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-all duration-500 ${
                   isCompleted
-                    ? "bg-red-600 text-white shadow-md shadow-red-200"
+                    ? "bg-blue-700 text-white shadow-md shadow-blue-200"
                     : "bg-gray-100 text-gray-400 border-2 border-gray-200"
-                } ${isCurrent ? "ring-4 ring-red-100 scale-110" : ""}`}
+                } ${isCurrent ? "ring-4 ring-blue-100 scale-110" : ""}`}
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
                 {isCompleted ? (
@@ -399,14 +399,14 @@ function AnimatedProgressBar({ currentStatus }: { currentStatus: string }) {
                 )}
                 {/* Current step pulse */}
                 {isCurrent && (
-                  <span className="absolute inset-0 rounded-full animate-ping bg-red-600 opacity-20" />
+                  <span className="absolute inset-0 rounded-full animate-ping bg-blue-700 opacity-20" />
                 )}
               </div>
               {/* Label */}
               <p
                 className={`mt-2.5 text-xs text-center hidden sm:block transition-colors duration-300 max-w-[80px] ${
                   isCurrent
-                    ? "font-bold text-red-600"
+                    ? "font-bold text-blue-700"
                     : isCompleted
                       ? "font-medium text-gray-900"
                       : "text-gray-400"
@@ -420,7 +420,7 @@ function AnimatedProgressBar({ currentStatus }: { currentStatus: string }) {
               <div className="flex-1 h-1 mx-1.5 mt-[18px] rounded-full overflow-hidden bg-gray-200">
                 <div
                   className={`h-full rounded-full transition-all duration-700 ease-out ${
-                    idx < currentIdx ? "bg-red-600 w-full" : "w-0"
+                    idx < currentIdx ? "bg-blue-700 w-full" : "w-0"
                   }`}
                   style={{
                     transitionDelay: `${(idx + 1) * 200}ms`,
@@ -455,8 +455,8 @@ function RouteVisualization({
       <div className="flex items-center gap-4">
         {/* Origin */}
         <div className="flex flex-col items-center shrink-0 w-20">
-          <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mb-2">
-            <svg className="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+            <svg className="w-5 h-5 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
             </svg>
@@ -468,7 +468,7 @@ function RouteVisualization({
         <div className="flex-1 relative">
           <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-red-600 rounded-full transition-all duration-1000 ease-out"
+              className="h-full bg-blue-700 rounded-full transition-all duration-1000 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -478,7 +478,7 @@ function RouteVisualization({
               className="absolute top-1/2 -translate-y-1/2 transition-all duration-1000 ease-out"
               style={{ left: `calc(${progress}% - 12px)` }}
             >
-              <div className={`w-6 h-6 bg-red-600 rounded-full flex items-center justify-center shadow-md shadow-red-200 ${
+              <div className={`w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center shadow-md shadow-blue-200 ${
                 currentStatus === "in_transit" ? "animate-drive" : ""
               }`}>
                 <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -557,7 +557,7 @@ function TrackingSkeleton({ trackingCode }: { trackingCode: string }) {
       {/* Loading indicator */}
       <div className="flex items-center justify-center gap-3 py-4">
         <div className="relative">
-          <div className="animate-spin rounded-full h-8 w-8 border-3 border-gray-200 border-t-red-600" />
+          <div className="animate-spin rounded-full h-8 w-8 border-3 border-gray-200 border-t-blue-700" />
         </div>
         <div>
           <p className="text-gray-600 text-sm font-medium">Looking up shipment...</p>

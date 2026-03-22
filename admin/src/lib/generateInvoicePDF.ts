@@ -15,7 +15,7 @@ export function generateInvoicePDF(invoice: Invoice): void {
 
   // Header - Company name
   doc.setFontSize(22);
-  doc.setTextColor(220, 38, 38);
+  doc.setTextColor(29, 78, 216);
   doc.setFont("helvetica", "bold");
   doc.text("SpikeX Logistics", margin, y);
 
@@ -169,7 +169,7 @@ export function generateInvoicePDF(invoice: Invoice): void {
 
   y += 8;
   doc.text("Discount", labelX, y);
-  doc.setTextColor(220, 38, 38);
+  doc.setTextColor(29, 78, 216);
   doc.text(`-$${fmt(invoice.discount)}`, priceX, y, { align: "right" });
 
   // Total line

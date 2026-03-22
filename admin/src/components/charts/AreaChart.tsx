@@ -12,7 +12,7 @@ interface AreaChartProps {
 export default function AreaChart({
   data,
   height = 240,
-  color = "#dc2626",
+  color = "#1D4ED8",
 }: AreaChartProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 

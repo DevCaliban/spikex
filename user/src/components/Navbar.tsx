@@ -75,8 +75,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     pathname === link.href
-                      ? "text-red-600 bg-red-50"
-                      : "text-gray-700 hover:text-red-600 hover:bg-gray-50"
+                      ? "text-blue-700 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-700 hover:bg-gray-50"
                   }`}
                 >
                   {link.label}
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <>
                   <Link
                     href="/my-shipments"
-                    className="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                    className="text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors"
                   >
                     My Shipments
                   </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
                   </span>
                   <button
                     onClick={logout}
-                    className="text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    className="text-sm text-gray-500 hover:text-blue-700 transition-colors"
                   >
                     Logout
                   </button>
@@ -109,13 +109,13 @@ export default function Navbar() {
                 <>
                   <Link
                     href="/login"
-                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 rounded-lg transition-colors"
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-lg transition-colors"
                   >
                     Login
                   </Link>
                   <Link
                     href="/register"
-                    className="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                    className="px-4 py-2 text-sm font-medium bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
                   >
                     Register
                   </Link>
@@ -146,7 +146,7 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-lg"
+                  className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -158,7 +158,7 @@ export default function Navbar() {
                   <>
                     <Link
                       href="/my-shipments"
-                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-lg"
+                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
                       onClick={() => setMobileOpen(false)}
                     >
                       My Shipments
@@ -168,7 +168,7 @@ export default function Navbar() {
                         setMobileOpen(false);
                         logout();
                       }}
-                      className="block w-full text-left px-4 py-2.5 text-sm font-medium text-gray-500 hover:text-red-600 hover:bg-gray-50 rounded-lg"
+                      className="block w-full text-left px-4 py-2.5 text-sm font-medium text-gray-500 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
                     >
                       Logout ({user?.first_name})
                     </button>
@@ -177,14 +177,14 @@ export default function Navbar() {
                   <>
                     <Link
                       href="/login"
-                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-lg"
+                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
                       onClick={() => setMobileOpen(false)}
                     >
                       Login
                     </Link>
                     <Link
                       href="/register"
-                      className="block px-4 py-2.5 text-sm font-medium text-red-600 hover:bg-red-50 rounded-lg"
+                      className="block px-4 py-2.5 text-sm font-medium text-blue-700 hover:bg-blue-50 rounded-lg"
                       onClick={() => setMobileOpen(false)}
                     >
                       Register

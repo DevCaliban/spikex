@@ -73,7 +73,7 @@ export default function InvoiceDetailPage() {
 
         {loading && (
           <div className="flex justify-center py-20">
-            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-red-600" />
+            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-700" />
           </div>
         )}
 
@@ -119,7 +119,7 @@ export default function InvoiceDetailPage() {
                 <div className="flex items-center gap-2 flex-wrap">
                   <button
                     onClick={() => generateInvoicePDF(invoice)}
-                    className="inline-flex items-center px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 transition-colors gap-1.5"
+                    className="inline-flex items-center px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 transition-colors gap-1.5"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -165,8 +165,8 @@ export default function InvoiceDetailPage() {
               {/* Sender */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                     </svg>
                   </div>
@@ -228,7 +228,7 @@ export default function InvoiceDetailPage() {
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
                 <div>
                   <p className="text-xs text-gray-400">Tracking Code</p>
-                  <p className="text-sm font-medium font-mono text-red-600">{invoice.shipment.tracking_code}</p>
+                  <p className="text-sm font-medium font-mono text-blue-700">{invoice.shipment.tracking_code}</p>
                 </div>
                 <div>
                   <p className="text-xs text-gray-400">Origin</p>

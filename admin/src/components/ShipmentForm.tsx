@@ -38,8 +38,8 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
       {/* Sender Section */}
       <div>
         <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
-            <svg className="w-4 h-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+            <svg className="w-4 h-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
           </div>
@@ -56,7 +56,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="text"
               value={formData.sender_name}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -70,7 +70,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="email"
               value={formData.sender_email}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -84,7 +84,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="tel"
               value={formData.sender_phone}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -112,7 +112,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="text"
               value={formData.receiver_name}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -126,7 +126,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="email"
               value={formData.receiver_email}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -140,7 +140,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="tel"
               value={formData.receiver_phone}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               required
             />
           </div>
@@ -168,7 +168,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="text"
               value={formData.origin}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               placeholder="e.g. Lagos, Nigeria"
               required
             />
@@ -183,7 +183,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               type="text"
               value={formData.destination}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               placeholder="e.g. Abuja, Nigeria"
               required
             />
@@ -200,7 +200,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               min="0.01"
               value={formData.weight}
               onChange={handleChange}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm"
               placeholder="e.g. 2.5"
               required
             />
@@ -215,7 +215,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
               value={formData.description}
               onChange={handleChange}
               rows={1}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm resize-none"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm resize-none"
               placeholder="Brief description of the package contents"
             />
           </div>
@@ -226,7 +226,7 @@ export default function ShipmentForm({ onSubmit, loading }: ShipmentFormProps) {
         <button
           type="submit"
           disabled={loading}
-          className="px-6 py-2.5 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-6 py-2.5 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? (
             <span className="flex items-center gap-2">

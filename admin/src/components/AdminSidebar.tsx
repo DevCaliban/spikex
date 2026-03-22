@@ -85,7 +85,7 @@ export default function AdminSidebar() {
         onClick={() => setMobileOpen(false)}
         className={`group flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
           active
-            ? "bg-red-600 text-white shadow-lg shadow-red-900/30"
+            ? "bg-blue-700 text-white shadow-lg shadow-blue-950/30"
             : "text-gray-400 hover:text-white hover:bg-gray-800/70"
         } ${collapsed ? "justify-center px-2" : ""}`}
         title={collapsed ? label : undefined}
@@ -171,7 +171,7 @@ export default function AdminSidebar() {
         </Link>
         <button
           onClick={logout}
-          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-400 hover:text-red-400 hover:bg-red-600/10 transition-all ${collapsed ? "justify-center px-2" : ""}`}
+          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-400 hover:text-blue-400 hover:bg-blue-700/10 transition-all ${collapsed ? "justify-center px-2" : ""}`}
           title={collapsed ? "Logout" : undefined}
         >
           <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -184,7 +184,7 @@ export default function AdminSidebar() {
       {/* User */}
       <div className="border-t border-gray-800 px-3 py-3">
         <div className={`flex items-center gap-3 ${collapsed ? "justify-center" : ""}`}>
-          <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white text-sm font-bold shrink-0">
+          <div className="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center text-white text-sm font-bold shrink-0">
             A
           </div>
           {!collapsed && (

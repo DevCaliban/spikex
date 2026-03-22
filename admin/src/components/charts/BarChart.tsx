@@ -88,7 +88,7 @@ export default function BarChart({ data, height = 240 }: BarChartProps) {
                 height={barH}
                 rx={2}
                 className={`transition-all duration-200 ${
-                  isHovered ? "fill-red-500" : "fill-red-600"
+                  isHovered ? "fill-blue-600" : "fill-blue-700"
                 }`}
                 opacity={isHovered ? 1 : 0.85}
               />
