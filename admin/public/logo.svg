@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- Parcel Icon -->
+  <g transform="translate(0, 5)">
+    <!-- Box body -->
+    <path d="M20 12L4 21V39L20 48L36 39V21L20 12Z" fill="#DC2626" opacity="0.9"/>
+    <!-- Box top flap -->
+    <path d="M20 12L36 21L20 30L4 21L20 12Z" fill="#EF4444"/>
+    <!-- Box center line -->
+    <path d="M20 30V48" stroke="white" stroke-width="1.5"/>
+    <!-- Box top center line -->
+    <path d="M20 12V30" stroke="white" stroke-width="1" opacity="0.5"/>
+    <!-- Location pin on top -->
+    <circle cx="20" cy="5" r="4" fill="#DC2626"/>
+    <circle cx="20" cy="5" r="1.5" fill="white"/>
+    <path d="M20 9L17.5 5H22.5L20 9Z" fill="#DC2626"/>
+  </g>
+  <!-- B12 text -->
+  <text x="46" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="28" fill="#DC2626">B12</text>
+  <!-- parcelHub text -->
+  <text x="100" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="28" fill="#374151">parcel</text>
+  <text x="194" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="28" fill="#374151">Hub</text>
+</svg>
