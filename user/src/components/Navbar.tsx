@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Top contact bar */}
-      <div className="bg-gray-900 text-gray-300 text-xs">
+      <div className="bg-blue-950/80 backdrop-blur-sm text-blue-200 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-9">
           <div className="hidden sm:flex items-center gap-4">
             <span className="flex items-center gap-1.5">
@@ -46,21 +46,21 @@ export default function Navbar() {
               </svg>
               24/7 Online Support
             </span>
-            <span className="hidden sm:inline text-gray-600">|</span>
+            <span className="hidden sm:inline text-blue-400/30">|</span>
             <span className="hidden sm:flex items-center gap-1.5">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
               </svg>
               20+ Countries Worldwide
             </span>
-            <span className="hidden sm:inline text-gray-600">|</span>
+            <span className="hidden sm:inline text-blue-400/30">|</span>
             <GoogleTranslate />
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white border-b border-gray-200 shadow-sm">
+      <nav className="bg-white/90 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-blue-900/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center shrink-0">
@@ -73,10 +73,10 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                     pathname === link.href
-                      ? "text-blue-700 bg-blue-50"
-                      : "text-gray-700 hover:text-blue-700 hover:bg-gray-50"
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50/60"
                   }`}
                 >
                   {link.label}
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <>
                   <Link
                     href="/my-shipments"
-                    className="text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors"
+                    className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                   >
                     My Shipments
                   </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
                   </span>
                   <button
                     onClick={logout}
-                    className="text-sm text-gray-500 hover:text-blue-700 transition-colors"
+                    className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
                   >
                     Logout
                   </button>
@@ -109,13 +109,13 @@ export default function Navbar() {
                 <>
                   <Link
                     href="/login"
-                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-lg transition-colors"
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 rounded-lg transition-colors"
                   >
                     Login
                   </Link>
                   <Link
                     href="/register"
-                    className="px-4 py-2 text-sm font-medium bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
+                    className="px-5 py-2 text-sm font-medium bg-linear-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-200"
                   >
                     Register
                   </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100"
+              className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
               aria-label="Toggle menu"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -141,24 +141,28 @@ export default function Navbar() {
 
           {/* Mobile menu */}
           {mobileOpen && (
-            <div className="lg:hidden py-4 border-t border-gray-100 space-y-1">
+            <div className="lg:hidden py-4 border-t border-blue-100/50 space-y-1 bg-white/80 backdrop-blur-xl rounded-b-xl">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
+                  className={`block px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
+                    pathname === link.href
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50/60"
+                  }`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
 
-              <div className="border-t border-gray-100 pt-3 mt-3 space-y-1">
+              <div className="border-t border-blue-100/50 pt-3 mt-3 space-y-1">
                 {!loading && isAuthenticated ? (
                   <>
                     <Link
                       href="/my-shipments"
-                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
+                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50/60 rounded-lg transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       My Shipments
@@ -168,7 +172,7 @@ export default function Navbar() {
                         setMobileOpen(false);
                         logout();
                       }}
-                      className="block w-full text-left px-4 py-2.5 text-sm font-medium text-gray-500 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
+                      className="block w-full text-left px-4 py-2.5 text-sm font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50/60 rounded-lg transition-colors"
                     >
                       Logout ({user?.first_name})
                     </button>
@@ -177,14 +181,14 @@ export default function Navbar() {
                   <>
                     <Link
                       href="/login"
-                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded-lg"
+                      className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50/60 rounded-lg transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       Login
                     </Link>
                     <Link
                       href="/register"
-                      className="block px-4 py-2.5 text-sm font-medium text-blue-700 hover:bg-blue-50 rounded-lg"
+                      className="block mx-4 mt-2 px-4 py-2.5 text-sm font-medium text-center bg-linear-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-200"
                       onClick={() => setMobileOpen(false)}
                     >
                       Register

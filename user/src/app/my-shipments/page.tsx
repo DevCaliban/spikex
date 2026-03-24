@@ -37,10 +37,13 @@ export default function MyShipmentsPage() {
 
         <main className="flex-1 bg-gray-50">
           {/* Hero banner */}
-          <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-10">
-            <div className="max-w-5xl mx-auto px-4">
+          <div className="relative bg-linear-to-br from-slate-900 to-blue-950 text-white py-12 overflow-hidden">
+            {/* Decorative glass elements */}
+            <div className="absolute -top-20 -right-20 w-56 h-56 bg-blue-500/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl" />
+            <div className="relative max-w-5xl mx-auto px-4">
               <h1 className="text-3xl font-bold mb-2">My Shipments</h1>
-              <p className="text-blue-100">
+              <p className="text-blue-200/70">
                 View and track all parcels you&apos;ve sent.
               </p>
             </div>
@@ -52,7 +55,7 @@ export default function MyShipmentsPage() {
                 {[...Array(3)].map((_, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-xl border border-gray-200 p-6 animate-pulse"
+                    className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 animate-pulse"
                   >
                     <div className="h-4 bg-gray-200 rounded w-1/4 mb-3" />
                     <div className="h-3 bg-gray-200 rounded w-1/2 mb-2" />
@@ -65,16 +68,16 @@ export default function MyShipmentsPage() {
                 <p className="text-red-600 mb-4">{error}</p>
                 <button
                   onClick={() => window.location.reload()}
-                  className="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors text-sm"
+                  className="px-4 py-2 bg-linear-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all text-sm shadow-md shadow-blue-500/25"
                 >
                   Retry
                 </button>
               </div>
             ) : shipments.length === 0 ? (
               <div className="text-center py-16">
-                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-gray-400"
+                    className="w-8 h-8 text-blue-400"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -95,7 +98,7 @@ export default function MyShipmentsPage() {
                 </p>
                 <Link
                   href="/send"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-linear-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all text-sm shadow-md shadow-blue-500/25"
                 >
                   <svg
                     className="w-4 h-4"
@@ -119,7 +122,7 @@ export default function MyShipmentsPage() {
                   <Link
                     key={shipment.id}
                     href={`/track/${shipment.tracking_code}`}
-                    className="block bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition-shadow"
+                    className="block bg-white rounded-xl border border-gray-100 p-5 shadow-sm hover:shadow-lg hover:shadow-gray-200/50 transition-all duration-200"
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                       <div>
@@ -151,7 +154,7 @@ export default function MyShipmentsPage() {
                             }
                           )}
                         </p>
-                        <span className="text-blue-700 text-xs font-medium">
+                        <span className="text-blue-600 text-xs font-medium">
                           Track →
                         </span>
                       </div>
@@ -162,7 +165,7 @@ export default function MyShipmentsPage() {
                 <div className="text-center pt-4">
                   <Link
                     href="/send"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-linear-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all text-sm shadow-md shadow-blue-500/25"
                   >
                     <svg
                       className="w-4 h-4"

@@ -37,7 +37,7 @@ export default function SendParcelPage() {
         {trackingCode ? (
           <main className="flex-1 bg-gray-50 py-16">
             <div className="max-w-lg mx-auto px-4 text-center">
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
+              <div className="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 p-8">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg
                     className="w-8 h-8 text-green-600"
@@ -62,9 +62,9 @@ export default function SendParcelPage() {
                   to monitor its status.
                 </p>
 
-                <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                  <p className="text-sm text-gray-500 mb-1">Tracking Code</p>
-                  <p className="text-2xl font-bold text-blue-700 font-mono tracking-wider">
+                <div className="bg-linear-to-br from-slate-900 to-blue-950 rounded-xl p-4 mb-6">
+                  <p className="text-sm text-blue-300/70 mb-1">Tracking Code</p>
+                  <p className="text-2xl font-bold text-white font-mono tracking-wider">
                     {trackingCode}
                   </p>
                 </div>
@@ -72,7 +72,7 @@ export default function SendParcelPage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     href={`/track/${trackingCode}`}
-                    className="flex-1 py-2.5 px-4 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors text-sm text-center"
+                    className="flex-1 py-2.5 px-4 bg-linear-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all text-sm text-center shadow-md shadow-blue-500/25"
                   >
                     Track Shipment
                   </Link>
@@ -81,13 +81,13 @@ export default function SendParcelPage() {
                       setTrackingCode(null);
                       setShipmentId(null);
                     }}
-                    className="flex-1 py-2.5 px-4 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm"
+                    className="flex-1 py-2.5 px-4 border border-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm"
                   >
                     Send Another
                   </button>
                   <Link
                     href="/my-shipments"
-                    className="flex-1 py-2.5 px-4 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm text-center"
+                    className="flex-1 py-2.5 px-4 border border-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors text-sm text-center"
                   >
                     My Shipments
                   </Link>
@@ -98,12 +98,15 @@ export default function SendParcelPage() {
         ) : (
           <main className="flex-1 bg-gray-50">
             {/* Hero banner */}
-            <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-12">
-              <div className="max-w-3xl mx-auto px-4 text-center">
+            <div className="relative bg-linear-to-br from-slate-900 to-blue-950 text-white py-14 overflow-hidden">
+              {/* Decorative glass elements */}
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
+              <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl" />
+              <div className="relative max-w-3xl mx-auto px-4 text-center">
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">
                   Send a Parcel
                 </h1>
-                <p className="text-blue-100 text-lg">
+                <p className="text-blue-200/70 text-lg">
                   Fill in the details below to register your shipment. You&apos;ll
                   receive a tracking code to monitor its progress.
                 </p>
@@ -117,7 +120,7 @@ export default function SendParcelPage() {
                 </div>
               )}
 
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
+              <div className="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 p-6 sm:p-8">
                 <SendParcelForm onSubmit={handleSubmit} loading={loading} />
               </div>
             </div>
