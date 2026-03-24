@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "SpikeXlogistics is a reliable logistics and shipping platform. Track your parcels in real-time with our advanced tracking system.",
   icons: {
-    icon: "/logo.svg",
+    icon: "/logo.png",
   },
 };
 
