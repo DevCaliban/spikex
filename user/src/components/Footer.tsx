@@ -98,7 +98,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
-                <span className="text-sm text-blue-300/70">124 Finchley Road, London, UK</span>
+                <span className="text-sm text-blue-300/70">321 Broad Street, Suite 200, Phenix City, Alabama, USA</span>
               </li>
               <li className="flex items-center gap-3">
                 <svg className="w-4 h-4 text-blue-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
